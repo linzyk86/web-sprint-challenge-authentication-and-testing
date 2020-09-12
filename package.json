@@ -4,10 +4,9 @@
   "description": "Authentication Sprint Challenge",
   "main": "index.js",
   "scripts": {
-    		"server": "nodemon --require dotenv/config index.js",
-    "test": "jest",
-        "start": "nodemon index.js"
-
+    "server": "nodemon --require dotenv/config index.js",
+    "test": "jest --watchAll",
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -37,5 +36,8 @@
     "dotenv": "^8.2.0",
     "nodemon": "^2.0.4",
     "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }
